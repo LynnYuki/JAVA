@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee   http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+ <context-param>
+  <param-name>emailOfwebmaster</param-name>
+  <param-value>webmaster@hotmail.com</param-value>
+ </context-param>
+ <context-param>
+  <param-name>upload folder</param-name>
+  <param-value>attachment</param-value>
+ </context-param>
+ <context-param>
+  <param-name>allowed file type</param-name>
+  <param-value>.gif,.jpg,.bmp</param-value>
+ </context-param>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>CounterServlet</servlet-name>
+  <servlet-class>mypack.CounterServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>CounterClearServlet</servlet-name>
+  <servlet-class>mypack.CounterClearServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>ContextTesterServlet</servlet-name>
+  <servlet-class>mypack.ContextTesterServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>lifeInit</servlet-name>
+  <servlet-class>mypack.LifeServlet</servlet-class>
+  <load-on-startup>1</load-on-startup>
+ </servlet>
+ <servlet>
+  <servlet-name>life</servlet-name>
+  <servlet-class>mypack.LifeServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>name_2</servlet-name>
+  <servlet-class>test.ServletSelf</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>FontServlet</servlet-name>
+  <servlet-class>mypack.FontServlet</servlet-class>
+  <init-param>
+   <param-name>color</param-name>
+   <param-value>blue</param-value>
+  </init-param>
+  <init-param>
+   <param-name>size</param-name>
+   <param-value>15</param-value>
+  </init-param>
+ </servlet>
+ <servlet>
+  <servlet-name>SetInformationServlet</servlet-name>
+  <servlet-class>servlet.SetInformationServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <servlet-name>GetInformationServlet</servlet-name>
+  <servlet-class>servlet.GetInformationServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>InitParamServlet</servlet-name>
+  <servlet-class>mypack.InitParamServlet</servlet-class>
+  <init-param>
+   <param-name>helloween</param-name>
+   <param-value>password</param-value>
+  </init-param>
+  <init-param>
+   <param-name>admin</param-name>
+   <param-value>admin</param-value>
+  </init-param>
+  <init-param>
+   <param-name>babyface</param-name>
+   <param-value>babyface</param-value>
+  </init-param>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>ContextParamServlet</servlet-name>
+  <servlet-class>mypack.ContextParamServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>InjectionServlet</servlet-name>
+  <servlet-class>mypack.InjectionServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>PostServlet</servlet-name>
+  <servlet-class>mypack.PostServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>ThreadSafetyServlet</servlet-name>
+  <servlet-class>servlet.ThreadSafetyServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <servlet-name>outputServlet</servlet-name>
+  <servlet-class>mypack.OutputServlet</servlet-class>
+ </servlet>
+ <servlet-mapping>
+  <servlet-name>CounterServlet</servlet-name>
+  <url-pattern>/count</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>CounterClearServlet</servlet-name>
+  <url-pattern>/clear</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>ContextTesterServlet</servlet-name>
+  <url-pattern>/contextTest</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>lifeInit</servlet-name>
+  <url-pattern>/lifeInit</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>life</servlet-name>
+  <url-pattern>/life</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>name_2</servlet-name>
+  <url-pattern>/doget1</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>FontServlet</servlet-name>
+  <url-pattern>/font</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>SetInformationServlet</servlet-name>
+  <url-pattern>/setInformation</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>GetInformationServlet</servlet-name>
+  <url-pattern>/getInformation</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>InitParamServlet</servlet-name>
+  <url-pattern>/servlet/InitParamServlet</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>ContextParamServlet</servlet-name>
+  <url-pattern>/servlet/ContextParamServlet</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>InjectionServlet</servlet-name>
+  <url-pattern>/servlet/InjectionServlet</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>PostServlet</servlet-name>
+  <url-pattern>/servlet/PostServlet</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>ThreadSafetyServlet</servlet-name>
+  <url-pattern>/servlet/ThreadSafetyServlet</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>outputServlet</servlet-name>
+  <url-pattern>/output</url-pattern>
+ </servlet-mapping>
+ <welcome-file-list>
+  <welcome-file>index.jsp</welcome-file>
+ </welcome-file-list>
+ <login-config>
+  <auth-method>BASIC</auth-method>
+ </login-config>
+ <env-entry>
+  <env-entry-name>hello</env-entry-name>
+  <env-entry-type>java.lang.String</env-entry-type>
+  <env-entry-value>Hello,Welcome to the JavaEE Resource Injection.</env-entry-value>
+ </env-entry>
+ <env-entry>
+  <env-entry-name>i</env-entry-name>
+  <env-entry-type>java.lang.Integer</env-entry-type>
+  <env-entry-value>30</env-entry-value>
+ </env-entry>
+ <env-entry>
+  <env-entry-name>persons</env-entry-name>
+  <env-entry-type>java.lang.String</env-entry-type>
+  <env-entry-value>Helloween,Cobain,Roses,Axl</env-entry-value>
+ </env-entry>
+    <servlet>
+        <servlet-name>average</servlet-name>
+        <servlet-class>mypack.HandleAverage</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>average</servlet-name>
+        <url-pattern>/lookAverage</url-pattern>
+    </servlet-mapping>
+   
+</web-app>
