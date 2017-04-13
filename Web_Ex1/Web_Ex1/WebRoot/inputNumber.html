@@ -1,0 +1,75 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>输入三角形的边长</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+
+  </head>
+  <script language="javascript">
+  function checkNum(){
+    var reg=/^[1-9]\d*$|^0$/
+    if ( reg.test(document.form1.a.value) == false )
+       {
+            window.alert("请将边长a输入数字！");
+            document.form1.a.focus();
+            return false ;
+      
+        } 
+     if ( reg.test(document.form1.b.value) == false )
+       {
+            window.alert("请将边长b输入数字！");
+            document.form1.b.focus();
+            return false ;
+      
+        }  
+        
+       if ( reg.test(document.form1.c.value) == false )
+       {
+            window.alert("请将边长c输入数字！");
+            document.form1.c.focus();
+           return false ;
+      
+        } 
+        var a=parseInt(document.form1.a.value);
+        var b=parseInt(document.form1.b.value);  
+        var c=parseInt(document.form1.c.value);
+        if(a+b>c&&a+c>b&&b+c>a&&(Math.abs(a-b)<c)&&(Math.abs(a-c)<b)&&(Math.abs(b-c)<a)){
+          document.form1.submit();
+          return false ;
+        }else{
+          window.alert("输入的数字不能构成三角形，请重新输入！");
+          document.form1.a.focus();
+          return false ;
+          
+        }  
+        
+}
+  
+  </script>
+  <body>
+    <font face="楷体_GB2312",size="8" color="blue">
+<P>请输入三角形的三个边a、b、c的长度：
+<BR>
+
+<!--以下是HTML表单,向服务器发送三角形的三个边的长度(本条语句是HTML注释)-->
+
+  <FORM action="showArea1.jsp" method=post  name=form1>
+    <P>请输入三角形边a的长度: 
+    <INPUT type="text" name="a">
+    <BR>
+    <P>请输入三角形边b的长度:
+    <INPUT type="text" name="b">
+    <BR>
+    <P>请输入三角形边c的长度:
+    <INPUT type="text" name="c">
+    <BR>
+    <p><center> <INPUT TYPE="submit" value="计算" name=submit onclick="return checkNum()"> </center>
+  </FORM>
+
+  </body>
+</html>
