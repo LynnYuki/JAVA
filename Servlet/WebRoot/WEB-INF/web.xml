@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee   http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+ <servlet>
+  <servlet-name>name_1</servlet-name>
+  <servlet-class>ServletSelf</servlet-class>
+ </servlet>
+ <servlet>
+  <servlet-name>AcceptForm</servlet-name>
+  <servlet-class>servlets.AcceptForm</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>AcceptLink</servlet-name>
+  <servlet-class>servlets.AcceptLink</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>upload</servlet-name>
+  <servlet-class>mypack.UploadServlet</servlet-class>
+  <init-param>
+   <param-name>filePath</param-name>
+   <param-value>store</param-value>
+  </init-param>
+  <init-param>
+   <param-name>tempFilePath</param-name>
+   <param-value>temp</param-value>
+  </init-param>
+ </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DownloadServlet</servlet-name>
+    <servlet-class>mypack.DownloadServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CheckServlet</servlet-name>
+    <servlet-class>mypack.CheckServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>OutputServlet</servlet-name>
+    <servlet-class>mypack.OutputServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>MainServlet</servlet-name>
+    <servlet-class>mypack.MainServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GreetServlet</servlet-name>
+    <servlet-class>mypack.GreetServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Check1Servlet</servlet-name>
+    <servlet-class>mypack.Check1Servlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Output1Servlet</servlet-name>
+    <servlet-class>mypack.Output1Servlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CrossServlet</servlet-name>
+    <servlet-class>mypack.CrossServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>HelloServlet1</servlet-name>
+    <servlet-class>mypack.HelloServlet1</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>HelloServlet2</servlet-name>
+    <servlet-class>mypack.HelloServlet2</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AdderServlet1</servlet-name>
+    <servlet-class>mypack.AdderServlet1</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AdderServlet2</servlet-name>
+    <servlet-class>mypack.AdderServlet2</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ImageServlet</servlet-name>
+    <servlet-class>mypack.ImageServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>RequestServlet</servlet-name>
+    <servlet-class>servlets.RequestServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>IdentityServlet</servlet-name>
+    <servlet-class>servlets.IdentityServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>TestServelt</servlet-name>
+    <servlet-class>mypack.TestServelt</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>TestServlet</servlet-name>
+    <servlet-class>mypack.TestServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>HandleAverageServlet</servlet-name>
+    <servlet-class>servlets.HandleAverageServlet</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <servlet-mapping>
+  <servlet-name>name_1</servlet-name>
+  <url-pattern>/doget1</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>AcceptForm</servlet-name>
+  <url-pattern>/AcceptForm</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>AcceptLink</servlet-name>
+  <url-pattern>/AcceptLink</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>upload</servlet-name>
+  <url-pattern>/upload</url-pattern>
+ </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DownloadServlet</servlet-name>
+    <url-pattern>/download</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CheckServlet</servlet-name>
+    <url-pattern>/check</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>OutputServlet</servlet-name>
+    <url-pattern>/output</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MainServlet</servlet-name>
+    <url-pattern>/main</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GreetServlet</servlet-name>
+    <url-pattern>/greet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Check1Servlet</servlet-name>
+    <url-pattern>/check1</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Output1Servlet</servlet-name>
+    <url-pattern>/output1</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CrossServlet</servlet-name>
+    <url-pattern>/cross</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>HelloServlet1</servlet-name>
+    <url-pattern>/hello1</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>HelloServlet2</servlet-name>
+    <url-pattern>/hello2</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AdderServlet1</servlet-name>
+    <url-pattern>/adder1</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AdderServlet2</servlet-name>
+    <url-pattern>/add2</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ImageServlet</servlet-name>
+    <url-pattern>/image</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RequestServlet</servlet-name>
+    <url-pattern>/servlet/RequestServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>IdentityServlet</servlet-name>
+    <url-pattern>/servlet/IdentityServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>TestServelt</servlet-name>
+    <url-pattern>/servlet/TestServelt</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>TestServlet</servlet-name>
+    <url-pattern>/servlet/TestServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>HandleAverageServlet</servlet-name>
+    <url-pattern>/lookAverage</url-pattern>
+  </servlet-mapping>
+ <login-config>
+  <auth-method>BASIC</auth-method>
+ </login-config>
+</web-app>
