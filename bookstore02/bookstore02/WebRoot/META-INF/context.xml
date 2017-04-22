@@ -1,0 +1,15 @@
+<Context  reloadable="true" >
+
+  <Manager className="org.apache.catalina.session.PersistentManager" 
+    saveOnRestart="true"
+    maxActiveSessions="10"
+    minIdleSwap="20"
+    maxIdleSwap="60"
+    maxIdleBackup="40"
+    maxInactiveInterval="300">
+
+    <Store className="org.apache.catalina.session.FileStore" directory="mydir" />
+
+  </Manager>
+
+</Context>
